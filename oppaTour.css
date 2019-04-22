@@ -1,0 +1,201 @@
+.none {
+  display: none;
+}
+body{
+  background-color: #FFDAB9;
+  font-family: "Arial Black", sans-serif;
+  margin: 10px;
+}
+h1, .singleBefore, #pic, .errorAppear {
+  margin: auto;
+}
+h1 {
+  color: #B22222;
+  font-size: 45pt;
+  letter-spacing: 2px;
+}
+#banner{
+    background-color: #FFA07A;
+    height: 160px;
+    overflow: hidden;
+}
+#images, #one {
+  display: flex;
+  justify-content: space-between;
+}
+#images{
+  width: 100px;
+  height: 150px;
+}
+#images img, .block, .allBefore img, #head, #validator{
+  height: auto;
+}
+#images img {
+  width: 100%;
+  margin: 20%;
+}
+button{
+  color:#FFDAB9;
+  background-color: #DC143C;
+  border-radius: 2px;
+  font-weight: bold;
+}
+fieldset{
+  float: right;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+#firstPart{
+  margin-bottom: 10%;
+}
+.allBefore{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 400px;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.blocks{
+  background-color: #FFF0F5;
+	border-radius: 5px;
+	box-shadow: 0 0 15px #800000;
+	float: left;
+	text-align: center;
+  margin: 15px;
+  padding: 10px;
+	width: 200px;
+  color: #708090;
+}
+.blocks, #allComments p{
+  font-style: italic;
+}
+.blocks, #two{
+  font-size: 15pt;
+}
+.allBefore img{
+	width: 200px;
+}
+#validator{
+  padding: 10px;
+  text-align: center;
+}
+a {
+  vertical-align: bottom;
+  float: right;
+}
+.singleBefore{
+  width: 80%;
+}
+.singleBefore, #facts{
+  display: flex;
+  flex-direction: column;
+}
+#facts span{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #ADD8E6;
+  line-height: 40px;
+}
+#facts, #typeComments input, #allComments, #allComments div{
+  margin: 5px;
+}
+#pic, #head {
+  width: 500px;
+}
+#pic{
+  padding: 2px;
+}
+#head {
+  float: right;
+}
+#two {
+  padding: 20px;
+  font-family: Verdana, Arial;
+  background-color: #CD5C5C;
+  color: #FFE4B5;
+  display: flex;
+}
+#describePerson{
+  color: white;
+}
+#home{
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 2px;
+  border: 3px outset black;
+  box-shadow: 0 0 10px #800000;
+  background-color: #D0B9A5;
+}
+#name{
+  color: #F74141;
+  text-shadow: 2px 2px #FFFACD;
+}
+#typeComments{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+#typeComments input {
+  height: 20px;
+}
+ #typeComments textArea {
+   height: 42px;
+ }
+#typeComments span{
+  background-color: #C6DCF5;
+  padding: 2px;
+}
+#allComments{
+  border-radius: 5px;
+  padding: 2%;
+  background-color:#F7D0BF;
+}
+#allComments div{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  padding-left: 15px;
+  border: 2px dashed #191970;
+  background-color: #F0E38C;
+}
+#allComments p {
+  font-family: "Courier New", Helvetica;
+}
+h3 {
+  font-size: 26pt;
+  text-decoration-line: underline;
+}
+h3 img {
+  height: 80px;
+  width: auto;
+}
+#feedbacks{
+  border: 2px inset black;
+  background-image: url(https://image.flaticon.com/icons/svg/609/609624.svg);
+}
+#titleAllComments{
+  background-color: #F7D0BF;
+  border-radius: 5px;
+  padding: 5px;
+  margin-left: 5px;
+}
+#titleAllComments img{
+  height: 40px;
+  width: auto;
+}
+.errorAppear{
+  color: red;
+  font-size: 60pt;
+  text-align: center;
+}
+#outputDate, #outputRate, #validator{
+  font-family: monospace, Helvetica;
+}
+#outputDate, #outputRate{
+  font-size: 10pt;
+  color: #4682B4;
+  text-decoration-line: underline;
+}

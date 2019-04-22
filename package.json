@@ -1,0 +1,32 @@
+{
+  "name": "oppatour",
+  "version": "1.0.0",
+  "description": "This is the final project for CSc 337 Spring 2019. Created by Julia Chen",
+  "main": "oppaTour.js",
+  "dependencies": {
+	"client-sessions": "^0.8.0",
+	"cookie-parser": "^1.4.4",
+	"express": "^4.16.4",
+	"fs": "^0.0.1-security",
+	"mysql": "^2.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uacs337spring2019/final-project-mr-experience.git"
+  },
+  "keywords": [
+    "Tour",
+    "Guys",
+    "Oppa"
+  ],
+  "author": "Julia Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uacs337spring2019/final-project-mr-experience/issues"
+  },
+  "homepage": "https://github.com/uacs337spring2019/final-project-mr-experience#readme"
+}
