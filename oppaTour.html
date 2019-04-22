@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- CSC 337 Final Project - Mr. Experience
+This is the html file for the project.
+Project Description: In Korea, there's an "oppa tour" going viral. Girls can
+buy the tour service from a Korean oppa (which means "older brother"), and
+show them around Seoul. Why not have this service for Tucson? We will provide
+multiple guys for girls who want someone hot or cute or handsome to guid them around!
+Girls can search by Languages to see if there's any matching guys who knows the
+language to show them around.
+-->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="oppaTour.css">
+    <link rel="shortcut icon" type="image/png" href="https://www.flaticon.com/premium-icon/icons/svg/1409/1409272.svg">
+    <script type="text/javascript" src="oppaTour.js"></script>
+    <title>Oppa Tour</title>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="images">
+        <img src="https://image.flaticon.com/icons/svg/854/854894.svg" alt="travel">
+        <h1>MR. EXPERIENCE</h1>
+        <img id="earth" src="https://image.flaticon.com/icons/svg/1706/1706020.svg" alt="earth">
+      </div>
+    </div>
+    <div id="intro">
+      <!--This is the first part of the intro part-->
+      <div id="firstPart">
+        <div id="searchArea">
+          <fieldset>
+            <legend>Sort By...</legend>
+            <div>
+              <span>Languages: </span>
+              <input type="text" id="Language" placeholder="English"> or/and
+            </div>
+            <div>
+              <span>Price: </span>
+              <input type="text" id="Price" placeholder="less than...">
+              <button id="search">Find Your Oppa</button>
+            </div>
+          </fieldset>
+        </div>
+        <div id="description">
+          <p>Looking for a different experience? Find you perfect Mr. Here!
+            Visiting a new city? Want to explore your hometown from a different perspective?
+            Rent you specific Mr. Here whether you like adventures,
+            a walk along the coast, art museums, learning a sport,
+            or cozy cafes. Worried your Mr. wont speak the same language?
+            Don't worry we have hundreds of Mr. from different cultural
+            backgrounds that speak various languages.
+            More to add-
+            Have fun with our safe, special Mr. for your specific experience.
+          </p>
+        </div>
+      </div>
+      <div id="errorMessage" class="errorAppear"></div>
+      <!--This will show when the page first loads-->
+      <div id="all" class="allBefore"></div>
+
+      <!--After search, below will appear-->
+      <div id="afterSearch">
+        <button id="fromSearch">Back To Homepage</button>
+      </div>
+
+      <!--Below will appear when user clicks on a single person-->
+      <div id="singlePerson" class="singleBefore">
+        <div id="one">
+          <h1 id="name"></h1>
+          <span id="home"></span>
+        </div>
+        <div id="two">
+          <div id="facts">
+            <div><span>Languages:<br /></span><div id="speak"></div></div>
+            <div><span>Birthday:<br /></span><div id="bday"></div></div>
+            <div><span>Age:<br /></span><div id="age"></div></div>
+            <div><span>Rate:<br /></span><div id="rate"></div></div>
+            <div><span>Price:<br /></span><div id="price"></div></div>
+            <p id="describePerson"></p>
+          </div>
+          <div id="pic">
+            <img id="head" src="noimage.jpg" alt="head"/>
+          </div>
+        </div>
+        <div id="feedbacks">
+          <h3>
+            <img src="https://image.flaticon.com/icons/svg/1733/1733254.svg" alt="chat">
+            Give Him Some Feedback...
+          </h3>
+          <div id="typeComments">
+            <span>Date:
+              <!--The type "date" is not supported in all browser, might have
+            some problem. But Chrome was tested-->
+              <input id="cDate" type="date"/>
+            </span>
+            <span>Name:
+              <input id="cName" type="text" placeholder="i.e. TaylorS"/>
+            </span>
+            <span>Rate:
+              <input id="cRate" type="text" placeholder="1-5, decimals allowed"/>
+            </span>
+            <textarea id="cWords"></textarea>
+            <button id="Submit">Submit</button>
+          </div>
+          <span id="titleAllComments">
+            <img src="https://image.flaticon.com/icons/svg/1029/1029132.svg" alt="heart">
+            All Comments
+          </span>
+          <div id="allComments"></div>
+        </div>
+      </div>
+    </div> <!--"intro" ends here-->
+    <div id="validator">
+      <span>Copyright @ Julia Chen</span>
+      <a href="http://validator.w3.org">
+        <img src="https://webster.cs.washington.edu/images/w3c-html.png" alt="Valid HTML5">
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator">
+        <img src="https://webster.cs.washington.edu/images/w3c-css.png" alt="Valid CSS">
+      </a>
+    </div>
+  </body>
+</html>
