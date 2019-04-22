@@ -18,7 +18,7 @@ This is the js file that implements the functions for the oppaTour.html.
   //This function shows all the oppas we have to offer
   function showAll(){
     //The page will start with loading all the oppa's info
-    let url = "http://localhost:process.env.PORT/?mode=all";
+    let url = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=all";
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
@@ -42,7 +42,7 @@ This is the js file that implements the functions for the oppaTour.html.
     home.onclick = window.onload;
     let language = document.getElementById("Language");
     let price = document.getElementById("Price");
-    let url = "http://localhost:process.env.PORT/?mode=none";
+    let url = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=none";
     if (language.value == "" && price.value == ""){
       document.getElementById("singlePerson").className="none";
       document.getElementById("all").className = "none";
@@ -65,16 +65,16 @@ This is the js file that implements the functions for the oppaTour.html.
       //Both language and price has correct inputs, try to find the person that
       //matches both then
       if (language.value != "" && isNaN(price.value)==false){
-        url = "http://localhost:process.env.PORT/?mode=find&price=" + parseInt(price.value)
+        url = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=find&price=" + parseInt(price.value)
         + "&language=" + language.value;
       }
       //Find only matches languages
       else if (/^[a-zA-Z]+$/.test(language.value) && price.value == ""){
-        url = "http://localhost:process.env.PORT/?mode=find&language=" + language.value;
+        url = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=find&language=" + language.value;
       }
       //Find only matches price
       else if (!isNaN(price.value) && language.value == ""){
-        url = "http://localhost:process.env.PORT/?mode=find&price=" + parseInt(price.value);
+        url = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=find&price=" + parseInt(price.value);
       }
       fetch(url)
         .then(checkStatus)
@@ -243,7 +243,7 @@ This is the js file that implements the functions for the oppaTour.html.
         },
         body : JSON.stringify(comment)
       };
-      let url = "http://localhost:process.env.PORT";
+      let url = "http://oppatour4ua.herokuapp.com:" + process.env.PORT;
   	  fetch(url, fetchOptions)
         .then(checkStatus)
         .then(function(responseText){
@@ -304,10 +304,10 @@ This is the js file that implements the functions for the oppaTour.html.
     let singleInfo = document.getElementById("singlePerson");
     singleInfo.style.visibility = "visible";
     document.getElementById("head").src = "allOppas/" + folder + "/head.jpg";
-    let urlInfo = "http://localhost:process.env.PORT/?mode=info&folder="+folder;
+    let urlInfo = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=info&folder="+folder;
     //let urlInfo = "http://localhost:3000/?notfound";
-    let urlDes = "http://localhost:process.env.PORT/?mode=description&folder="+folder;
-    let urlCom = "http://localhost:process.env.PORT/?mode=comments&folder="+folder;
+    let urlDes = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=description&folder="+folder;
+    let urlCom = "http://oppatour4ua.herokuapp.com:" + process.env.PORT + "/?mode=comments&folder="+folder;
 
     fetch(urlInfo)
       .then(checkStatus)
