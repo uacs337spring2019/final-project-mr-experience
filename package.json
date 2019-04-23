@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit1",
-    "start": "node server.js"
+    "start": "node oppaTour_service.js"
   },
   "repository": {
     "type": "git",
