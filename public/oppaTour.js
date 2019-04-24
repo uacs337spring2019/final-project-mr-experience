@@ -22,6 +22,7 @@ This is the js file that implements the functions for the oppaTour.html.
     fetch(url)
       .then(checkStatus)
       .then(function(responseText){
+	console.log(JSON.parse(responseText));
         let json = JSON.parse(responseText);
         let oppas = json.oppas;
         createList(oppas);
