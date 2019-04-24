@@ -71,7 +71,7 @@ app.get('/', function (req, res){
     json = findMatches(language, price);
   }
   if (plain != 1){
-    res.json(json);
+    res.send(json);
   }
 });
 function findMatches(language, price){
