@@ -2,7 +2,7 @@
   "name": "oppatour",
   "version": "1.0.0",
   "description": "This is the final project for CSc 337 Spring 2019. Created by Julia Chen",
-  "main": "oppaTour.js",
+  "main": "oppaTour_service.js",
   "dependencies": {
     "client-sessions": "^0.8.0",
     "cookie-parser": "^1.4.4",
@@ -29,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/uacs337spring2019/final-project-mr-experience/issues"
   },
-  "homepage": "https://github.com/uacs337spring2019/final-project-mr-experience#readme"
+  "homepage": "https://github.com/uacs337spring2019/final-project-mr-experience/oppaTour_service.js"
 }
