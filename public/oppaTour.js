@@ -80,7 +80,7 @@ This is the js file that implements the functions for the oppaTour.html.
       fetch(url)
         .then(checkStatus)
         .then(function(responseText){
-          let json = JSON.stringify(JSON.parse(responseText));
+            let json = JSON.parse(responseText);
             let oppas = json.oppas;
             document.getElementById("errorMessage").innerHTML = "";
             createList(oppas);
