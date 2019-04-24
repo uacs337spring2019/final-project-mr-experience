@@ -73,7 +73,7 @@ app.get('/', function (req, res){
   if (plain != 1){
     res.json(json);
   }
-})
+});
 function findMatches(language, price){
   //if the language has no input, language = "undefined"
   //if the price has no input, price = "NaN"
