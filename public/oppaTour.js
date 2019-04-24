@@ -23,7 +23,7 @@ This is the js file that implements the functions for the oppaTour.html.
       .then(checkStatus)
       .then(function(responseText){
 	console.log(responseText);
-        let json = JSON.stringify(JSON.parse(responseText));
+	let json = JSON.parse(responseText);
         let oppas = json.oppas;
         createList(oppas);
       })
@@ -314,7 +314,7 @@ This is the js file that implements the functions for the oppaTour.html.
       .then(checkStatus)
       .then(function(responseText){
         //Read info from info.txt and print it out
-        let json = JSON.stringify(JSON.parse(responseText));
+        let json = JSON.parse(responseText);
         printInformations(json.info);
       })
       .catch(function(error){
@@ -340,7 +340,7 @@ This is the js file that implements the functions for the oppaTour.html.
       .then(checkStatus)
       .then(function(responseText){
         //Read all comments and print them out
-        let json = JSON.stringify(JSON.parse(responseText));
+        let json = JSON.parse(responseText);
         document.getElementById("allComments").innerHTML = "";
         printComments(json.comments);
       })
